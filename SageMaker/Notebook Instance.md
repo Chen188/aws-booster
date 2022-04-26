@@ -3,7 +3,7 @@
 You may find local disk (/dev/xvda1) is full sometime, or facing `No space left on device`.
 Actually, docker and conda envs are installed in /dev/xvda1 disk. You can move docker data to EBS volume (under ~/SageMaker/), and delete unused conda envs.
 
-```
+```bash
 # mv docker data to SageMaker/dockerEnv
 sudo service docker stop
 DOCKER_PATH=~/SageMaker/dockerEnv
